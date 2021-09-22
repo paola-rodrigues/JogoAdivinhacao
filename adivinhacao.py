@@ -4,7 +4,7 @@ print("**********************************")
 
 print ("estou pensando no número entre 0 e 20")
 print()
-numero_secreto = 2
+numero_secreto = 9
 
 chute = input("Digite o seu numero: ")
 
@@ -14,7 +14,12 @@ numero = int(chute)
 if(numero_secreto == numero):
     print("Você acertou")
 else:
-    print("Você errou")
+    if(numero > numero_secreto):
+        print("Você errou! O seu chute foi maior do que o número secreto.")
+    elif(numero < numero_secreto):
+        print("Você errou! O seu chute foi menor do que o número secreto.")
+    
+print("Fim do Jogo")    
     
 
 
