@@ -21,9 +21,11 @@ if(nivel == 1):
     total_de_tentativas = 10
 elif(nivel == 2):
     total_de_tentativas = 6
-else:
+elif(nivel == 3):
     total_de_tentativas = 4  
-    
+else:
+    print ("não existe esse nível, inicie novamente!")
+   
 
 for rodada in range (1, total_de_tentativas + 1):
     print ("Tentativa {} de {}".format(rodada, total_de_tentativas))
@@ -48,7 +50,7 @@ for rodada in range (1, total_de_tentativas + 1):
             print("Você errou! O seu chute foi maior do que o número secreto.")
         elif(menor):
             print("Você errou! O seu chute foi menor do que o número secreto.")
-        pontos_perdidos = abs (numero_secreto - numero)   
+        pontos_perdidos = abs (numero_secreto - numero)
         pontos = pontos - pontos_perdidos 
     
 print("Fim do Jogo")    
